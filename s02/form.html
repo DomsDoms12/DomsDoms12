@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM</title>
+</head>
+
+
+<body>
+    <h1>SAMPLE FORM</h1>
+    <!--HTML FORM CREATE INPUT AND OUTPUT THAT CAN A USER INTERACT-->
+    <form action=""><!--may backend sa user.ang action -->
+                    <!--is a set of group and identities that the user can interact
+                    in the web page!-->
+        <p><!--always a paragraph tag-->
+           <label for="fname">First Name:</label>
+           <input type="text" id="fname" name="fname"><!--indicated siya doon sa for  dapat, inote match yung id tas yung label form-->                                    
+        </p> 
+        <p>
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname">
+        </p>
+        <p>
+          <!--input elements is for interactives controls-->
+          <input type="submit" value="submit"><!--confirm the value input bu the user inside the form!
+                                                form handler- usual server page with script for processing inputs(backend)-->
+          <input type="reset" value="clear"> <!--remove the information by the user inside the form!-->
+         
+        </p>
+    </form>
+        <h1>SURVEY FORM</h1>
+        <form action="">
+          <p>
+            <label for="fname">FIRSTNAME:</label>
+            <input type="text" name="fname" id="fname">
+          </p>
+          <p>
+            <label for="lname">LASTNAME:</label>
+            <input type="text" name="lname" id="lname">
+          </p>
+          <p>
+            <label for="emailAdd">Email Address:</label>
+            <input type="email" name="emailAdd id="emailAdd">
+          </p>         
+          <p>
+            <label for="bNum">BATCH NUMBER:</label>
+            <Select name="bNum" id="bNum">
+              <option value="b1">select</option>
+              <option value="b24">BATCH 24</option>
+              <option value="25">BATCH 25</option>
+              <option value="b26">BATCH 26</option>
+              <option value="27">BATCH 27</option>
+            </Select>
+          </p>
+              <p>
+                <label for="instructor">instructor:</label>
+                <input type="text" name="instructor" id="instructor">
+              </p>
+                What do yoy like about the bootcamp!!               
+                <p>
+                  <input type="checkbox" name="classroom" id="classroom" value="classroom">
+                  <label for="classroom">classroom experience</label><br/>                  
+                  <input type="checkbox" name="expertise" id="expertise" value="expertise">
+                  <label for="expertise">Instructor expertise</label><br/>               
+                  <input type="checkbox" name="collaboration" id="collaboration" value="collaboration">
+                  <label for="collaboration">classmate collaboration</label><br/>            
+                  <input type="checkbox" name="others" id="others" value="others">
+                  <label for="others">others</label><br/>
+                  <input type="text" name="others" id="others" placeholder="Please Input what others do you like in Bootcamp">
+                </p>
+                <p>
+                <label for="comments"> Comments for your instructor</label>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Your comments" maxlength="100"></textarea>
+                <!--placeholders is a guidance to help the user for the filling thier form.. 
+                maxLength- number of  character to be input -->
+               </p>
+              <p>
+                <button type="submit">submit</button>
+                <button type="reset">Reset</button>
+              </p>
+                <p>
+                  <input type="radio" name="etype" id="etype"><!--kung anu ang nasa type dapat the same sa name and id.. -->>
+                  <label for="etype">Onsite</label>
+                  <input type="radio" name="etype" id="etype">
+                  <label for="etype">online</label>
+                </p>
+
+        </form>
+
+</body>
+</html>
