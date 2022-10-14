@@ -1,0 +1,33 @@
+
+h1{
+    font-size: 40px;
+}
+.blue{
+    color: rgb(37, 37, 95);
+}
+#capital{
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.list{
+    width: 100%;
+    background-color: rgb(214, 237, 88);
+}
+div img
+{
+    border-radius: 50%; 
+        width: 30%;
+      
+}
+
+div + ul{
+    list-style-type: none;
+}
+div ~ ul{
+    text-align: left;
+}
+
+section > ul {
+    letter-spacing: .5rem;
+}

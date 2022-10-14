@@ -73,7 +73,7 @@ Flexbox
     /* align-items: flex-end; */
     /*aligns items vertically and it is at the bottom */
 
-    align-items: center;
+ align-items: center;   
     /*
     no overlap has been made in justify-content: center flex property but the items itself centralized within the flexbox */
 
