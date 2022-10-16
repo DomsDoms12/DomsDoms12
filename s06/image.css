@@ -19,7 +19,8 @@ img{
     display: none; /*hidden siya as default*/
     position: fixed; /*stay in place lang dapat*/    
     /*position box p to. ito yung stactk , the way it is build up*/
-    z-index: 1; /* para mag sit on top */
+    z-index: 1; /* para mag sit on top ! stack order of an elment*
+                this property works when position elements, flex are present/
     padding-top: 100px; /*location of the box, nagdeclare ka ng z- index*/
     left: 0;
     top:0;
