@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--kunin yun link sa bootstap . kunin yung link na my css,-->
+
+</head>
+<body>
+    <!--background color-->
+    <h1>background color</h1>
+    <div class="p-3 mb-2 bg-secondary bg-gradient">.bg-secondary</div></div>
+    <!--padding and margin : pinakataas is  m5-->
+
+<!--
+        https://getbootstrap.com/docs/5.2/content/typography/#text-utilities
+        for reference typography
+-->
+    <h1><p class="text-danger p-5">typography Under #text-utilities</p></h1>
+    <figure>
+      <blockquote class="blockquote">
+        <p>A well-known quote, contained in a blockquote element.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+     
+
+
+
+
+
+    <p class="text-primary">.text-primary</p>
+    <p class="text-secondary">.text-secondary</p>
+    <p class="text-success">.text-success</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-warning bg-dark">.text-warning</p>
+    <p class="text-info bg-dark">.text-info</p>
+    <p class="text-light bg-dark">.text-light</p>
+    <p class="text-dark">.text-dark</p>
+    <p class="text-body">.text-body</p>
+    <p class="text-muted">.text-muted</p>
+    <p class="text-white bg-dark">.text-white</p>
+    <p class="text-black-50">.text-black-50</p>
+    <p class="text-white-50 bg-dark">.text-white-50</p>
+
+
+
+    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+
+
+
+    <table class="tabletable-stripped-column">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>text transform</h1>
+      <!--https://getbootstrap.com/docs/5.2/utilities/text/#text-transform-->
+
+
+      <p class="text-capitalize  ">
+        <p class="fw-bold fst-italic">
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe soluta fugiat possimus nulla veniam eaque rerum quisquam hic, odio sequi in dignissimos ipsa neque odit ullam consequuntur eos dolor? Repellendus!.</p></p>
+      <!--It  let the text capralize on their first letter-->
+
+      
+      <p class="text-uppercase bg-warning"> LThe quick brown fox jump over the lazt dog.</p>
+      <!--capitalize all the text-->
+
+      
+      
+      <!--yung dating vesion ay font-italic ang ginagamit-->
+      <p class="fst-italic">Bolder weight text (relative to the parent element).</p> 
+      
+      
+
+      <p class="fw-bold text-center" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe soluta fugiat possimus nulla veniam eaque rerum quisquam hic, odio sequi in dignissimos ipsa neque odit ullam consequuntur eos dolor? Repellendus!.</p>
+
+
+
+      <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+      <p class="fw-semibold text-decoration-line-through">Semibold weight text.</p>
+      <p class="fw-normal fs-6">Normal weight text.</p>
+      <p class="fw-light">Light weight text.</p>
+      <p class="fw-lighter lh-lg">Lighter weight text (relative to the parent element).</p>
+
+
+
+      <h1>Testing using span</h1>
+      <!--<span class="text-center">ALIGN THIS ELEMENT IN THE CENter</span> -->
+      <!-- DI GUMAGANA SA LATEST VERSION , DAHIL GINAGAMIT LANG SA PARAGRAPH-->
+
+      <h1>Testing Semantic element</h1>
+      <section class="text-bg-primary text-center">USING Semantic ELEMENT TO ALign the text in the center</section>
+
+      <!--text center vs text justisy-->
+
+      <p class=" container-fluid p-3 fw-bold">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quo quia quasi est possimus, explicabo dicta? Debitis impedit vero consequatur. Ab similique ratione quas magni sint voluptas incidunt facilis odio?
+        and <code>div</code> defines a section in a document.</p></div>
+        <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quo doloremque blanditiis, ipsum animi fuga sequi, possimus ipsam nulla facere harum beatae quia laudantium odit ratione minus? Nostrum, cumque accusantium!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, accusantium veritatis asperiores dolore eos illo molestias repellendus iusto, deleniti sed perspiciatis odit ducimus delectus rerum libero. Labore ipsam ad exercitationem.
+      </p>
+
+      <span class="d-block p-2 text-bg-success fw-bold text-capitalize text-center w-25 p-3" style="background-color: #eee;">Width 25%">using span element in display property</span>
+      <span class="d-block p-2 text-bg-dark">d-block</span>
+            <!--display|||https://getbootstrap.com/docs/5.2/utilities/display/-->
+
+      <!--sIzing the width | https://getbootstrap.com/docs/5.2/utilities/sizing/#relative-to-the-parent-->
+      <div class="w-25 p-3" style="background-color: rgb(9, 204, 68);">Width 25%</div>
+      <div class="w-50 p-3" style="background-color: rgb(17, 141, 114);">Width 50%</div>
+      <div class="w-75 p-3" style="background-color: rgb(16, 42, 160);">Width 75%</div>
+      <div class="w-100 p-3" style="background-color: rgb(112, 38, 38);">Width 100%</div>
+      <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+
+
+
+      <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+        <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+        <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+        <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+        <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+        <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+      </div>
+
+<br>
+      <!--https://getbootstrap.com/docs/5.2/content/images/#responsive-images-->
+      <h1>Responsive Image</h1>
+
+      <img src="hard.png"  alt="alak" height="100px" width="200px"
+      class="img-fluid  img-thumbnail rounded mx-auto d-block h-25 w-25 ">
+
+<br>
+
+  <!--text alignment//
+  https://getbootstrap.com/docs/5.2/utilities/text/#text-alignment
+  -->
+  <!--sa previoius version ginagamit din ang text-right or left-->
+
+
+    <p class="text-start">Start aligned text on all viewport sizes.</p>
+    <p class="text-center">Center aligned text on all viewport sizes.</p>
+    <p class="text-end">End aligned text on all viewport sizes.</p>
+
+    <p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider.</p>
+    <p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider.</p>
+    <p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider.</p>
+    <p class="text-xl-start">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+
+
+
+    <a href="#" class="link-primary">Primary link</a>
+    <a href="#" class="link-secondary">Secondary link</a>
+    <a href="#" class="link-success">Success link</a>
+    <a href="#" class="link-danger">Danger link</a>
+    <a href="#" class="link-warning">Warning link</a>
+    <a href="#" class="link-info">Info link</a>
+    <a href="#" class="link-light">Light link</a>
+    <a href="#" class="link-dark">Dark link</a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!--combination of poopper js  and bootstrap distribution-->
+    
+    <!--kunin yun link sa bootstap . kunin yung link na my css,-->>
+    
+</body>
+</html>

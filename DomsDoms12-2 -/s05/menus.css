@@ -1,0 +1,26 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*hidden- hide the entire rest of the content 
+    vissible- show all the content 
+    scrool- create the scollbox when the content is overflowed
+    auto- when it is needed. it vreate a scrollbox
+    */
+    /* overflow contols what happen to the 
+    content that is to big to fit the area*/
+}
+li{
+    float: left;
+}
+
+li a{
+    display:inline-block;
+    padding: 8px;
+    background-color:rgb(247, 178, 178);
+    text-decoration: none;
+}
+li a:hover{
+    background-color: rgb(118, 15, 15);
+}

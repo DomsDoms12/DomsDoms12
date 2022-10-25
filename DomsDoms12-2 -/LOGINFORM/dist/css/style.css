@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* opacity: 0.3; */
+}
+
+div .button:hover, h2:hover, a:hover {
+  background-color: rgb(235, 14, 51);
+}
+
+img{
+  margin: 0;
+  padding: 10 5px; 
+  border-radius: 50px;
+
+}
+
+main {
+  width:100vw;
+  height: 100vh;
+
+
+}
+
+
+nav h1:hover{
+  background-color: #899697;
+  cursor: pointer;
+}
+
+
+
+nav h1{
+  margin-top: 10;
+  color: white;
+
+
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  background-color: #0f00e6;
+
+}
+.navs ul{
+    display: flex;
+    list-style-type: none;
+
+}
+
+.navs li a{
+      font-size: 20px;    
+      text-decoration: none;
+      color:white;
+      margin: 0 30px;/* left and right margin space. */
+      
+}       
+      
+.navs ul li a:hover{
+      background-color: rgb(146, 13, 35);
+
+}
+.main-page{
+  padding: 5%;
+}
+

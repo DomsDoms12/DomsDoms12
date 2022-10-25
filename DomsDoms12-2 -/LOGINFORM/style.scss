@@ -1,0 +1,44 @@
+$btn-danger : red;
+
+
+@mixin colors($colors:lightblue)
+{
+
+    background-color: lightblue;
+
+}       
+@mixin devices ($breakpoint) { //the name of the mixin is devices
+  
+    @if $breakpoint == tablet {    
+    @media only screen and (max-width: 680px) {
+      @content;
+    }
+  }
+ 
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 481px) {
+      @content;
+    }
+  }
+}
+body{
+
+  display:flex;
+  justify-content: center;
+}
+button{
+  background: red;
+  &::hover{
+    background: blue;
+  }
+}
+// $theme-colors: (
+//   "primary": $primary,
+//   "danger": $danger
+// );
+
+
+$custom-file-text: (
+  en: "Browse",
+  es: "Elegir"
+);

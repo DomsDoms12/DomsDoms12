@@ -1,0 +1,122 @@
+    #container{
+
+            width: 47%;
+            background: #eee;
+            margin: auto;
+            position: relative;
+    }
+
+
+    h1{
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 22px;
+        font-style: italic;
+
+
+    }
+    /*ginamitan nko ng stick property yung fonts*/
+    .stickyPosition{
+    position: -webkit-sticky;/*4 safari*/ 
+    position:sticky;
+    top: 15px;
+    padding: 3px;
+    margin-left:15%;
+    
+    }
+
+    .staticPosition{
+        border: 2px solid #000000;
+        width: 250px;
+        height: 700px;
+        padding: 10px;
+        left: 100%;
+    }
+
+    /*madam iniba kung kulay para mas madali kong maita kung mga position tsaka mas madali
+    kung madistinguish yung mga space*/
+    .absolutePosition{
+        position: absolute;
+        border:2px solid blue;
+        width: 250px;
+        height: 700px;
+        padding: 10px;
+        top: 34px;
+        left: 300px;
+    }
+    .relativePosition{
+        position: relative; 
+        border:2px solid red;
+        margin-top: -63.20%;
+        left: 600px;
+        width: 250px;
+        height: 700px;
+        padding: 10px;
+    }
+    .fixedPosition{
+        position: fixed;
+        border: 2px solid green; 
+        width: 250px;
+        height: 700px;
+        padding: 10px;
+        left: 62.30%;
+        top: 3.7%;
+    }
+
+
+    #myDIV {
+        height:300px;
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 20px;
+        color: blue;
+    }
+
+    .transparent{
+        background-color:#fffefe;
+        opacity: 0.5;
+    }
+
+
+
+    div.header {
+        position: relative;
+        width:800px;
+        height:150px;
+        left: 30%;
+        border: 3px solid #000000;
+    }
+
+    .logo{
+        position: relative; 
+        top: -4%;
+        padding:10px;
+        width:40%;
+        height:50px;
+        left: 15px;
+        border:3px solid black;
+    }
+
+    .topmenu{
+        position: absolute; 
+        padding:10px;
+        width:150px;
+        height:20px;
+        left: 76%;
+        top:-4%;
+        border:3px solid black;
+    }
+
+    .menu{
+        position: fixed; 
+        padding:10px;
+        width:565px;
+        height:20px;
+        left: 38%;
+        top:72%;
+        border:3px solid black;
+
+    }
+
+
+  
