@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assign.css">
+    <title>CSS Positioning</title>
+</head>
+
+    <!--try to add media query!-->
+
+   <style>
+         body {
+                background-color: white;
+            }
+            
+                @media only screen and (max-width: 600px) 
+                {
+                body 
+                {
+                background-color: lightblue;
+                }
+            }
+    </style>
+    
+<body>
+    <div id ="container">
+        <!-- i will use stickPosition-->
+        <h1 class="stickyPosition">CSS POSITIONING | STATIC, RELATIVES, ABSOLUTELY, STICKY, FIXED POSITION </h1>
+
+        <!-- i use staticPosition-->
+        <div>
+            <p class="staticPosition">div1</p>
+        </div>
+        <!--i use absoluteposition-->
+        <div>
+            <p class="absolutePosition">div2</p>
+        </div>
+        <!--i use relativePosition-->
+        <div>
+            <p class="relativePosition">div3</p>
+        </div>
+    
+        <!--I use stickPosition -->
+        <div>
+            <p class="fixedPosition">div4</p>
+        </div>   
+    </div>
+
+<hr><hr><hr>
+
+    <h1>sample output</h1>
+
+        <div class="header">
+
+         <p class="logo">logo</p>
+         <p class="topmenu"> top menu </p>    
+         <p class="menu">menu</p>
+
+        </div>
+</body>
+</html>

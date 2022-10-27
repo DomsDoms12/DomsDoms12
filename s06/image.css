@@ -1,0 +1,108 @@
+img{
+    border: 3px solid blueviolet;
+}
+
+#responsive
+{
+    width:50%;
+    height: 50%;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition:0.3s;
+}
+#responsive:hover{
+    opacity:0.7; /*Para naman value ng images sa kapal nito,,  the lower the value ,, the more transparency it is*/
+    /*ito yung pagkablurry ng images*/
+}
+/*this id for the modal background, kung ano ang itsura ng modal */
+.modal {
+    display: none; /*hidden siya as default*/
+    position: fixed; /*stay in place lang dapat*/    
+    /*position box p to. ito yung stactk , the way it is build up*/
+    z-index: 1; /* para mag sit on top ! stack order of an elment*
+                this property works when position elements, flex are present/
+    padding-top: 100px; /*location of the box, nagdeclare ka ng z- index*/
+    left: 0;
+    top:0;
+    width: 100%;/*full widthe modal */
+    height: 100%; /*full height modal*/
+    overflow: auto; /*Enable to scroll para needed*/
+    background-color: rgb(0, 0, 0); /*fillback color. mismatch */
+    background-color:rgb(0, 0,0,0.9) ; /*black with opacity*/
+} 
+
+
+
+/*Modal content(image)*/
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+/*caption the modal image*/
+#caption{
+    margin:auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc; 
+    padding: 10px 0;
+    height: 150px;
+}
+
+/*Add animation, end user like*/
+.modal-content, #caption{
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+} 
+
+
+
+/*gamiten natin si webkit sa modal*/
+/*ang webkit ay pang compatible ng browser*/
+@-webkit-keyframes zoom
+{
+    from{-webkit-transform:scale(0)}
+    to {-webkit-transform: scale(1);}
+}
+
+@keyframes zoom
+{
+    from{
+        transform: scale(0);
+    }to{
+        transform: scale(1);
+    }
+    
+}
+
+/*aceess the close button*/
+.close{
+    position:absolute;
+    top: 15px;
+    right: 35px;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*100& Image with a smaller screen*/
+@media only screen and(max-width:700px)
+{
+    .modal-content{
+        width: 100%;
+    }
+
+
+}

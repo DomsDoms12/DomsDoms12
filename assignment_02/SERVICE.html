@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY</title>
+</head>
+ <style>
+        body
+    {
+        background:url('./image.jpg')no-repeat;
+        background-position-x:50%;
+        background-position-y:50%;
+        background-size:cover;
+        text-align: center;
+        background-color: #E7E8E7;
+        font-size: bold ;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';  
+    }
+        .service
+    {
+        margin:auto;
+        background: white;
+        max-width:700px;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    input[type=text]
+    {
+        display: inline-block;
+        width: 600px;
+        padding: 10px;
+
+    }
+    
+    input[type=radio]{
+        padding: 0;
+        width: 300;
+    }
+      
+ </style>
+<body>
+    <DIV class="service">
+    <H1>ABC Company IT Service Request Form </H1>
+    <form action="TYFORM.html"></form>
+
+              <LAbel for="fName">FIRST NAME:</LAbel>
+              <input type="text" name="fName" id="fName" size="30">
+        <P>
+              <LAbel for="lName">LAST NAME:</LAbel>
+              <input type="text" name="lName" id="lName" size="30">
+        </P>
+
+        <p>
+                <label for="emailAdd">Email Address:</label>
+                <input type="text" name="emailAdd" id="emailAdd" size="30">
+        </p>    
+        <P>
+                <LABEl for="phone">Contact Number: </LABEl>
+                <input type="text" id="phone" name="phone" placeholder=" Enter your Complete Phone Number with extention or mobile number | 
+                09xx-xxx-xxxx" size="30" maxlength="11">
+        </P>
+        
+        <p>
+            <input type="radio" name="etype" id="etype">
+            <label for="etype">Onsite</label>
+            <input type="radio" name="etype" id="etype">
+            <label for="etype">online</label>
+        </p>
+        
+        <p>
+            
+            <LABEl for="phone">Location :</LABEl><br/>
+            For onsite please state your Workstation No., Department Floor and Building </bR>
+            for work from home., please complete your address and include a landmark nearest to your Location<br/>
+                <input type="text" id="Location" name="Location" size="90">
+             
+        </p>
+       
+       <p>
+        <label for="ReqType">Select Request Type:</label>
+        <SELect name="ReqType" id="ReqType" multiple>
+            <OPTION>Desktop/Laptop Setup</OPTION>
+            <OPTIOn>Desktop/Laptop Support</OPTIOn>
+            <option>Desktop/Laptop Maintenance</option>
+            <option>Software Installation</option>
+            <OPTIOn>Software Support</OPTIOn>
+            <option>Computer Peripheral Setup</option>
+            <option>Peripheral Troubleshooting</option>
+            <option>Computer Peripheral Maintenance</option>
+        </SELect>
+       </p>
+       
+       <p>
+        <label for="Description"> Request Description:</label>
+        <textarea name="Description" id="Description" cols="40" rows="20" placeholder="Your Description about the services" ></textarea>
+        </p>
+        <p>
+            <form action="submit_request.html">
+            
+                <input type="file" id="myFile" name="filename"><br>
+           
+                <input type="submit">
+                <button type="reset">Reset</button>
+          
+              </form>
+        </p>
+
+    </DIV>
+    
+    
+    <hr>
+            <center><p><a href="https://www.facebook.com/" target="_blank">facebook |
+             <a href="https://www.youtube.com/" target="_blank"></a> youtube</a> |
+             <a href="https://www.zeno.fm/player/station-onefm" target="_blank">zeno apps</a></p></center>
+</body>
+</html>
