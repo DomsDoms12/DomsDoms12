@@ -90,7 +90,7 @@ video{
     bottom:30px;
     transform: translateX(-50%); /*para maicenter sa middle */
     z-index: 1;
-    color: var(--bs-light);
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +100,7 @@ video{
 
 
 .radio_scroll-btn:hover{
-    color:var(--bs-light);
+    color:white;
     opacity:0.8;
 
 
@@ -144,6 +144,11 @@ video{
 }
 
 
+/*para sa animation ng scroll bar sa id na kapag icliclik niy amy aninamation sa pagbaba */
+
+html{scroll-behavior: smooth;}
+
+
 /*CUSTOMEr container css doon sa html */
 .container-custom{
      width:100%;
@@ -151,7 +156,6 @@ video{
      margin:0 auto;
 
 }
-
 
 
 @media (min-width: 1200px){
@@ -167,9 +171,6 @@ video{
 }
 
 
-
-
-
 /*para sa mga devices sa media query
     @media (min-width: 544px){}
     @media (min-width: 768px){}
@@ -182,3 +183,48 @@ video{
 */
 
 
+/* css para sa section na sa body */ 
+.radios{
+
+    padding-top:40px;
+    padding-bottom:40px;
+    
+}
+.radio_section-thumbnail{
+    height: auto;
+    object-fit:cover;
+    margin:0  auto;
+}
+
+
+
+.radios_content-width{
+    max-width:456px;
+    margin: 0 auto;
+}
+
+
+.radio-background{
+
+    background-color: #fffdee;
+}
+
+
+@media (min-width:544px){
+.radios {
+
+    padding-top:40px;
+    padding-bottom:40px;
+  }
+
+  .radio_section-thumbnail{
+    height: auto;
+    object-fit:cover;
+    }
+}
+
+/* ito namn para Footer mga lods 
+*/
+.footer .border-highlight {
+    border-top: 1px solid ;
+  }
