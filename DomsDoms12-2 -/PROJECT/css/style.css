@@ -1,0 +1,184 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+video{
+        border-radius: 10px;
+        margin: auto;
+    }
+    
+    
+.bg{
+        background-color: rgb(0, 0, 0);
+    }
+
+
+
+.nav-items a:hover{
+    width: 300px;
+    border: none;
+    color: white;
+    background-color: rgb(225, 221, 0);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #7b8441;
+    transition: ease-out 0.3s;
+    outline:none;
+    }
+
+
+.nav-items a:hover{
+    box-shadow: inset 100px 0 0 0 #919d14;
+    cursor: pointer;
+    color: black;
+}
+
+/*RADIO SECTION CSS*/
+.radio{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow:hidden;
+
+}
+
+@media (min-width:1400px){
+
+    .radio_heading{
+        font-size: 3.2rem;
+    }
+}
+
+.radio_video{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    min-width:100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+.radio_overlay{
+    position: absolute;
+    left:0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    z-index:1;
+}
+
+
+.radio_content{
+    z-index:1;
+}
+
+
+
+.radio_content-width{
+    max-width: 540px;    
+}
+
+.radio_scroll-btn{
+    position:absolute;
+    left:50%;
+    bottom:30px;
+    transform: translateX(-50%); /*para maicenter sa middle */
+    z-index: 1;
+    color: var(--bs-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none ;
+}
+
+
+
+.radio_scroll-btn:hover{
+    color:var(--bs-light);
+    opacity:0.8;
+
+
+
+
+}
+/* .raddio-scroll-btn:hover{
+    width: 300px;
+    border: none;
+    color: white;
+    background-color: rgb(225, 221, 0);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #7b8441;
+    transition: ease-out 0.3s;
+    outline:none;
+    
+
+}
+
+.raddio-scroll-btn:hover{
+    box-shadow: inset 100px 0 0 0 #919d14;
+    cursor: pointer;
+    color: black;
+} */
+
+.radio_scroll-btn .bx{
+    transition-delay:0.8s;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from{
+
+        transform: translateY(0px);
+
+    }
+    to{
+
+        transform: translateY(-10px);
+    }
+}
+
+
+/*CUSTOMEr container css doon sa html */
+.container-custom{
+     width:100%;
+     padding: 0 5rem;
+     margin:0 auto;
+
+}
+
+
+
+@media (min-width: 1200px){
+    .container-custom{width:1140px}
+}
+
+@media (min-width: 1400px){
+    .container-custom{width:1340px}
+}
+
+@media (min-width: 1600px){
+    .container-custom{width:1520px}
+}
+
+
+
+
+
+/*para sa mga devices sa media query
+    @media (min-width: 544px){}
+    @media (min-width: 768px){}
+    @media (min-width: 922px){}
+    @media (min-width: 1200px){}
+    @media (min-width: 1400px){}
+    @media (min-width: 1600px){}
+    @media (min-width: 2100px){}
+
+*/
+
+
