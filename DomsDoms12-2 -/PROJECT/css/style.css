@@ -89,7 +89,7 @@
 
 .container .video-list-container{
    flex:1 1 350px;
-   height: 485px;
+   height: 585px;
    overflow-y: scroll;
    border-radius: 5px;
    box-shadow: 0 5px 15px rgba(0,0,0,.1);
@@ -189,6 +189,12 @@
         text-align:justify
     }
 
+
+
+    /*******************************************************************************
+        radiostatations po ts mga sir 
+    ********************************************************************************/
+  
 
     .radio{
         position: relative;
@@ -306,47 +312,59 @@
   }
       
 /*--------------------------------------------------------------
-# /*Animation sa  mag images mga sir gamitan natin ng shine na animation*/
+ /*Animation sa  mga figure  images mga sir gamitan natin animation
+ binase ko lang sa image na turo ni maam except through sa scale gamitan ntin ng zoom 
 
---------------------------------------------------------------*/
-    
-    figure {
+---
+-----------------------------------------------------------*/
+        figure {
+            /* width: 300px;
+            height: 200px; */
+            margin: 0;
+            padding: 0;
+
+            overflow: hidden;
+        }
+
+        figure {
         position: relative;
-    }
-    figure::before {
+        }
+        figure::before {
         position: absolute;
         top: 0;
         left: -75%;
         z-index: 2;
         display: block;
         content: '';
-        width: 30%;
+        width: 50%;
         height: 100%;
         background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
         background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
         -webkit-transform: skewX(-25deg);
         transform: skewX(-25deg);
-    }
-    figure:hover::before {
+        }
+        figure:hover::before {
         -webkit-animation: shine .75s;
         animation: shine .75s;
-    }
-    @-webkit-keyframes shine {
-        100% {
-        left: 125%;
         }
-    }
-    @keyframes shine {
+        @-webkit-keyframes shine {
         100% {
-        left: 125%;
+            left: 125%;
         }
-    }
- 
- 
+        }
+        @keyframes shine {
+        100% {
+            left: 125%;
+        }
+        }
+        
+        
  
     /*----------------------------------------------------------
     css and hover para sa ating image mga sir 
     ------------------------------------------------------------*/
+
+
     .image {
         border: 2px solid rgb(238, 255, 0);
         width: 100%;
@@ -482,8 +500,142 @@
     box-shadow: insert 100px 0 0 0 #919d14;
     cursor: pointer;
     color: black;
-}
+    }
 
+
+    /***************************************************************************************
+    para sa lovetalk css 
+    
+    */
+    
+    
+    video {
+        max-width: 100%;
+      }
+
+    .card {
+        transition: transform 0.2s ease;
+        box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+        border-radius: 0;
+        border: 0;
+        margin-bottom: 1.5em;
+      }
+      .card:hover {
+        transform: scale(1.1);
+      }
+
+    /********************************************
+    
+    commnt css mga sir
+    
+    **************************************************/
+    form input{
+        width:800px;
+        height: 45px;
+        border-radius: 4px;
+        text-align:center;
+        margin-top: 10px;
+        margin-bottom:10px;
+        outline: none;
+        border:none;
+    }
+    
+    form button{
+      border:2px solid #fff;
+      color:white;
+      border-radius: 30px;
+      padding: 10px 30px;
+      width: 400px;
+    
+    
+    }
+    
+
+
+
+
+
+    form textarea{
+        width:800px;
+        height: 145px;
+        border-radius: 4px;
+        text-align:center;
+        margin-top: 30px;
+        margin-bottom:10px;
+        outline: none;
+        border:none;
+    }
+
+
+
+/**********************************************************************************
+                                        paras sa sebd css 
+                                        *************************************************************************************************************************/
+
+    .btn{
+        width: 300px;
+        border: none;
+        color: white;
+        background-color: rgb(225, 0, 68);
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 #f9e506;
+        transition: ease-out 0.3s;
+        font-size: 2 rem;
+        outline:none;
+        }
+    
+    
+    .btn:hover{
+        box-shadow: inset 100px 0 0 0 #db5609;
+        cursor: pointer;
+        color: black;
+    }
+    
+    
+    /* para sa clear css niya
+     */
+    .btn1{
+        width:300px;
+        border:none;
+        border: none;
+        color: white;
+        background-color: rgb(8, 236, 57);
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 #64073d;
+        transition: ease-out 0.3s;
+        font-size: 2 rem;
+        outline:none;
+        }
+    
+    
+    .btn1:hover{
+        box-shadow: inset 100px 0 0 0 #edffe6;
+        cursor: pointer;
+        color: black;
+    } 
+    
+    
+    /*CSS PARA SA modaal button*/
+    .btn2{
+        width:100px;
+        border:none;
+        border:#f9e506;
+        color: white;
+        background-color: rgb(236, 8, 8);
+        border-radius: 4px;
+        box-shadow: inset 0 0 0 0 #64073d;
+        transition: ease-out 0.3s;
+        font-size: 12 px;
+        outline:none;
+        }
+    
+    
+    .btn2:hover{
+        box-shadow: inset 100px 0 0 0 #edffe6;
+        cursor: pointer;
+        color: black;
+    } 
+    
     /*CSS PARA SA  ATING TESTIMONIAL*/
     .card {
         border-radius: .7rem;
